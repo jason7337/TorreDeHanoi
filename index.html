@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Torre de Hanoi</title>
+</head>
+<body>
+    <div class="header">
+        <h2>Tarea Computo II, Torre de Hanoi</h2>
+
+        <p>Numero de discos:
+            <select id = "selector" class = "numDisks" onchange="newGame()">
+                <option id ="d3" selected>3</option>
+                <option id ="d4">4</option>
+                <option id ="d5">5</option>
+                <option id ="d6">6</option>
+                <option id ="d7">7</option>
+                <option id ="d8">8</option>
+            </select>
+            <input type="submit" value="Aceptar" onclick="aceptar()">
+        </p>
+
+        <div>
+            <p>Movimientos: <samp id="movimientos">0</samp></p>
+            <p>Indicaciones: has click sobre el disco para seleccionar, y luego has click sobre
+                el palo a trasladar
+            </p>
+        </div>
+    </div>
+
+    <div class="mesa">
+        <div class="torre" id="torreUno">
+
+        </div>
+        <div class="torre" id="torreDos">
+
+        </div>
+        <div class="torre" id="torreTres">
+            
+        </div>
+    </div>
+
+    <script src="scritp/app.js"></script>
+</body>
+</html>

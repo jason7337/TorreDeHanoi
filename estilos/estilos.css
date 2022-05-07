@@ -1,0 +1,54 @@
+#selector {
+    background-color: #000000;
+    color:white;
+    border: none;
+}
+.mesa {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 800px;
+}
+
+.torre {
+    width: 260px;
+    background-image: linear-gradient(90deg,
+                                    rgba(0, 0, 0, 0) 120px, 
+                                    #412b00 120px, 
+                                    #412b00 140px,
+                                    rgba(0,0,0,0) 140px);
+    height:250px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.torre:hover {
+    background-image: linear-gradient(90deg,
+                                    rgba(0, 0, 0, 0.14) 120px, 
+                                    #57441e 120px, 
+                                    #57441e 140px,
+                                    rgba(0, 0, 0, 0.14) 140px);
+    
+}
+
+.discoFormato {
+    border: solid black 1px;
+    border-radius:5px;
+    height: 25px;
+}
+
+#discoF1, #discoF2, #discoF3, #discoF4, #discoF5, #discoF6, #discoF7, #discoF8 {
+    background-color: rgb(131, 85, 0);
+}
+
+#discoF1 {width: 260px;}
+#discoF2 {width: 230px;}
+#discoF3 {width: 200px;}
+#discoF4 {width: 170px;}
+#discoF5 {width: 140px;}
+#discoF6 {width: 110px;}
+#discoF7 {width: 80px;}
+#discoF8 {width: 50px;}
